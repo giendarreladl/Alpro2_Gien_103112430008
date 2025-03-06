@@ -36,7 +36,7 @@ func main() {
     fmt.Println("Output akhir = " + satu + " " + dua + " " + tiga)
 }
 ```
-![[2A-01.png]]
+![](Output/2A-01.png)
 Program ini menerima tiga input string dari pengguna, lalu mencetak urutan awalnya. Setelah itu, program menukar posisi string dengan pergeseran ke kiri, di mana nilai pertama berpindah ke posisi kedua, nilai kedua ke posisi ketiga, dan nilai ketiga kembali ke posisi pertama menggunakan variabel sementara. Terakhir, program mencetak urutan string setelah pertukaran.
 
 #### 2A-02
@@ -60,7 +60,7 @@ func main() {
 
 }
 ```
-![[2A-02.png]]
+![](Output/2A-02.png)
 Program ini meminta pengguna untuk memasukkan sebuah tahun, lalu menentukan apakah tahun tersebut merupakan tahun kabisat berdasarkan aturan kalender Gregorian. Tahun kabisat adalah tahun yang habis dibagi 400 atau tahun yang habis dibagi 4 tetapi tidak habis dibagi 100. Program menghitung berdasarkan aturan ini dan menyimpan hasilnya dalam variabel `kabisat`, yang akan bernilai `true` jika tahun tersebut kabisat dan `false` jika bukan. Hasil akhirnya ditampilkan di layar dalam format "Kabisat: true" atau "Kabisat: false".
 
 #### 2A-03
@@ -85,7 +85,7 @@ func main() {
     
 }
 ```
-![[2A-03.png]]
+![](Output/2A-03.png)
 Program ini menghitung volume dan luas permukaan bola berdasarkan jejari yang dimasukkan pengguna. Nilai π digunakan untuk akurasi, lalu perhitungan dilakukan dengan rumus matematika yang sesuai. Hasil akhirnya ditampilkan dalam format desimal yang rapi.
 
 #### 2A-04
@@ -113,7 +113,7 @@ func main() {
 
 }
 ```
-![[2A-04.png]]
+![](Output/2A-04.png)
 Program ini mengonversi suhu dari Celsius ke Reamur, Fahrenheit, dan Kelvin berdasarkan nilai yang dimasukkan oleh pengguna. Perhitungan dilakukan menggunakan rumus konversi standar, di mana Reamur diperoleh dengan mengalikan Celsius dengan 4/5, Fahrenheit dihitung dengan (9/5 × Celsius) + 32, dan Kelvin didapat dengan menambahkan 273 ke Celsius. Hasil konversi kemudian ditampilkan dalam format tanpa angka desimal.
 
 ### 2A-05
@@ -142,7 +142,7 @@ func main() {
 	fmt.Printf("%c%c%c\n", y1, y2, y3)
 }
 ```
-![[2A-05.png]]
+![](Output/2A-05.png)
 Program ini membaca lima bilangan bulat dan tiga karakter sebagai input. Lima bilangan pertama dikonversi ke karakter ASCII dan ditampilkan sebagai teks. Tiga karakter berikutnya diubah ke karakter selanjutnya dalam urutan ASCII sebelum ditampilkan.
 
 
@@ -181,7 +181,8 @@ func main() {
     fmt.Println(berhasil)
 }
 ```
-![[2B-01.png]]Program ini membaca empat warna dari input sebanyak lima kali dan mengecek apakah setiap set warna selalu berurutan **"merah", "kuning", "hijau", "ungu"**. Jika ada set yang tidak sesuai, variabel berhasil diubah menjadi false. Setelah perulangan selesai, hasil akhir (`true` atau `false`) ditampilkan.
+![](Output/2B-01.png)
+Program ini membaca empat warna dari input sebanyak lima kali dan mengecek apakah setiap set warna selalu berurutan **"merah", "kuning", "hijau", "ungu"**. Jika ada set yang tidak sesuai, variabel berhasil diubah menjadi false. Setelah perulangan selesai, hasil akhir (`true` atau `false`) ditampilkan.
 
 ### 2B-02
 Suatu pita (string) berisi kumpulan nama-nama bunga yang dipisahkan oleh spasi dan ‘–‘, contoh pita diilustrasikan seperti berikut ini. Pita: mawar – melati – tulip – teratai – kamboja – anggrek. Buatlah sebuah program yang menerima input sebuah bilangan bulat positif (dan tidak nol) N, kemudian program akan meminta input berupa nama bunga secara berulang sebanyak N kali dan nama tersebut disimpan ke dalam pita. (Petunjuk: gunakan operasi penggabungan string dengan operator “+” ). Tampilkan isi pita setelah proses input selesai.
@@ -219,7 +220,7 @@ func main() {
     fmt.Println("Bunga:", jumlah)
 }
 ```
-![[2B-02.png]]Program ini membaca nama bunga sebanyak `n` kali dan menyusunnya dalam format berpisah dengan tanda " - ". Jika input "SELESAI" dimasukkan, perulangan berhenti lebih awal. Setelah itu, program menampilkan rangkaian bunga dalam bentuk pita serta jumlah bunga yang telah dimasukkan.
+![](Output/2B-02.png)Program ini membaca nama bunga sebanyak `n` kali dan menyusunnya dalam format berpisah dengan tanda " - ". Jika input "SELESAI" dimasukkan, perulangan berhenti lebih awal. Setelah itu, program menampilkan rangkaian bunga dalam bentuk pita serta jumlah bunga yang telah dimasukkan.
 
 ### 2B-03
 Setiap hari Pak Andi membawa banyak barang belanjaan dari pasar dengan mengendarai
@@ -260,7 +261,7 @@ func main() {
     }
 }
 ```
-![[2B-03.png]]
+![](Output/2B-03.png)
 Program ini membaca berat belanjaan di dua kantong dan menentukan apakah sepeda motor oleng berdasarkan selisih berat (≥9). Program berhenti jika berat total >150 atau ada input negatif.
 
 ### 2B-04-a
@@ -284,7 +285,7 @@ func main() {
 
 }
 ```
-![[2B-04-a.png]]Program ini menghitung f(K) menggunakan rumus matematika dan menampilkan hasil dengan 10 desimal.
+![](Output/2B-04-a.png)Program ini menghitung f(K) menggunakan rumus matematika dan menampilkan hasil dengan 10 desimal.
 
 ### 2B-04-b
 √2 merupakan bilangan irasional. Meskipun demikian, nilai tersebut dapat dihampiri
@@ -311,7 +312,7 @@ func main() {
     fmt.Printf("Nilai akar 2 = %.10f\n", hasil)
 }
 ```
-![[2B-04-b.png]]rogram ini menghitung nilai perkiraan akar 2 menggunakan rumus iteratif berdasarkan nilai K yang dimasukkan pengguna. Program mengalikan hasil dengan rasio tertentu dalam loop hingga K iterasi, lalu mencetak hasilnya dengan presisi 10 desimal.
+![](Output/2B-04-b.png)rogram ini menghitung nilai perkiraan akar 2 menggunakan rumus iteratif berdasarkan nilai K yang dimasukkan pengguna. Program mengalikan hasil dengan rasio tertentu dalam loop hingga K iterasi, lalu mencetak hasilnya dengan presisi 10 desimal.
 ### 2C-01
 PT POS membutuhkan aplikasi perhitungan biaya kirim berdasarkan berat parsel. Maka,
 buatlah program BiayaPos untuk menghitung biaya pengiriman tersebut dengan
@@ -356,7 +357,7 @@ func main() {
     fmt.Printf("Total biaya: Rp. %d\n", total)
 }
 ```
-![[2C-01.png]]Program ini menghitung biaya pengiriman parsel berdasarkan berat yang dimasukkan pengguna dalam gram. Berat dikonversi ke kilogram dan gram, lalu biaya dihitung sesuai tarif yang ditentukan. Jika berat mencapai 10 kg atau lebih, biaya tambahan untuk gram diabaikan. Program menampilkan detail berat, rincian biaya, dan total biaya pengiriman.
+![](Output/2C-01.png)Program ini menghitung biaya pengiriman parsel berdasarkan berat yang dimasukkan pengguna dalam gram. Berat dikonversi ke kilogram dan gram, lalu biaya dihitung sesuai tarif yang ditentukan. Jika berat mencapai 10 kg atau lebih, biaya tambahan untuk gram diabaikan. Program menampilkan detail berat, rincian biaya, dan total biaya pengiriman.
 
 ### 2C-02
 a. Jika nam diberikan adalah 80.1, apa keluaran dari program tersebut? Apakah eksekusi program tersebut sesuai spesifikasi soal?
@@ -418,7 +419,7 @@ func main() {
     fmt.Println("Nilai mata kuliah:", nmk)
 }
 ```
-![[2C-02.png]]Program ini menerima input berupa nilai akhir mata kuliah (NAM) dalam bentuk bilangan riil, lalu menentukan nilai mata kuliah (NMK) berdasarkan rentang yang telah ditentukan. Program menggunakan struktur if-else if untuk mengklasifikasikan NAM ke dalam kategori NMK, kemudian mencetak hasilnya.
+![](Output/2C-02.png)Program ini menerima input berupa nilai akhir mata kuliah (NAM) dalam bentuk bilangan riil, lalu menentukan nilai mata kuliah (NMK) berdasarkan rentang yang telah ditentukan. Program menggunakan struktur if-else if untuk mengklasifikasikan NAM ke dalam kategori NMK, kemudian mencetak hasilnya.
 
 ### 2C-03
 ```go
@@ -448,5 +449,5 @@ func main() {
     fmt.Println("Prima:", isPrime)
 }
 ```
-![[2C-03.png]]
+![](Output/2C-03.png)
 Program ini menerima input bilangan bulat b > 1, mencari dan mencetak semua faktor bilangan tersebut. Program juga menentukan apakah bilangan tersebut merupakan bilangan prima dengan menghitung jumlah faktornya. Jika bilangan memiliki tepat dua faktor (1 dan dirinya sendiri), maka program mencetak `true` untuk bilangan prima, selain itu mencetak false.
