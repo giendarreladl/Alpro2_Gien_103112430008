@@ -195,6 +195,6 @@ func main() {
 }
 
 ```
-![](soal3.png)
+![](Output/soal3.png)
 
 >Program ini mencetak deret bilangan berdasarkan aturan Collatz. Fungsi cetakDeret(n int) menerima bilangan bulat positif sebagai input dan mencetak setiap suku deret hingga mencapai 1. Jika bilangan saat ini genap, maka dibagi 2, sedangkan jika ganjil, dikalikan 3 lalu ditambah 1. Proses ini terus berulang hingga bilangan menjadi 1. Fungsi main() membaca input dari pengguna dan memanggil cetakDeret(n) untuk mencetak hasilnya.
