@@ -257,7 +257,7 @@ func main() {
 ```
 ![](Output/o3.png)
 
->Program Go ini digunakan untuk mencatat hasil beberapa pertandingan antara dua klub sepak bola. Pengguna pertama-tama memasukkan nama dua klub, yaitu Klub A dan Klub B. Kemudian program masuk ke dalam perulangan untuk menerima input skor dari pertandingan satu per satu. Jika skor yang dimasukkan bernilai negatif, maka dianggap sebagai tanda pertandingan selesai dan perulangan berhenti. Untuk setiap pertandingan, program membandingkan skor kedua klub dan mencatat pemenangnya, atau mencatat "Draw" jika hasilnya imbang. Setelah semua pertandingan dicatat, program menampilkan hasil dari setiap pertandingan sesuai urutan input.
+>Program ini digunakan untuk mencatat hasil beberapa pertandingan antara dua klub sepak bola. Pengguna pertama-tama memasukkan nama dua klub, yaitu Klub A dan Klub B. Kemudian program masuk ke dalam perulangan untuk menerima input skor dari pertandingan satu per satu. Jika skor yang dimasukkan bernilai negatif, maka dianggap sebagai tanda pertandingan selesai dan perulangan berhenti. Untuk setiap pertandingan, program membandingkan skor kedua klub dan mencatat pemenangnya, atau mencatat "Draw" jika hasilnya imbang. Setelah semua pertandingan dicatat, program menampilkan hasil dari setiap pertandingan sesuai urutan input.
 
 
 ### Soal-4
@@ -268,9 +268,7 @@ apakah membentuk palindrom.
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"os"
 )
 
 const NMAX = 127
@@ -281,8 +279,9 @@ type Teks struct {
 }
 
 func isiArray(t *Teks) {
-	reader := bufio.NewReader(os.Stdin)
-	input, _ := reader.ReadString('^')
+	var input string
+	fmt.Scanln(&input)
+
 	t.n = 0
 	for _, ch := range input {
 		if ch == '^' {
@@ -320,7 +319,7 @@ func palindrome(t1, t2 Teks) bool {
 
 func main() {
 	var teks Teks
-	fmt.Print("Teks : ")
+	fmt.Print("Teks (akhiri dengan ^): ")
 	isiArray(&teks)
 
 	fmt.Print("Teks asli   : ")
@@ -338,8 +337,9 @@ func main() {
 	}
 }
 
+
 ```
 ![](Output/o4.png)
 
->Program Go ini digunakan untuk mengecek apakah sebuah teks merupakan palindrome atau bukan. Pengguna diminta untuk memasukkan teks yang diakhiri dengan simbol ^. Teks tersebut akan disimpan dalam array bertipe rune, dan panjangnya dicatat dalam n. Setelah teks asli ditampilkan, program membalik urutan karakter dalam teks dan menyimpannya dalam array baru. Kedua array (teks asli dan teks terbalik) kemudian dibandingkan satu per satu. Jika semua karakter cocok di posisi yang berlawanan, maka teks tersebut adalah palindrome (teks yang sama saat dibaca dari depan maupun dari belakang). Jika tidak, maka teks tersebut bukan palindrome.
+>Program ini digunakan untuk mengecek apakah sebuah teks merupakan palindrome atau bukan. Pengguna diminta untuk memasukkan teks yang diakhiri dengan simbol ^. Teks tersebut akan disimpan dalam array bertipe rune, dan panjangnya dicatat dalam n. Setelah teks asli ditampilkan, program membalik urutan karakter dalam teks dan menyimpannya dalam array baru. Kedua array (teks asli dan teks terbalik) kemudian dibandingkan satu per satu. Jika semua karakter cocok di posisi yang berlawanan, maka teks tersebut adalah palindrome (teks yang sama saat dibaca dari depan maupun dari belakang). Jika tidak, maka teks tersebut bukan palindrome.
 
