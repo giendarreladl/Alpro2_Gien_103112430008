@@ -56,8 +56,7 @@ func main() {
 	fmt.Printf("Kelinci paling berat : %s dengan berat %.2f\n", max.nama, max.berat)
 }
 ```
-![](s(1).png)
-
+![](Output/s(1).png.png)
 >Program ini digunakan untuk mencatat data sejumlah anak kelinci berupa nama dan berat badannya. Data disimpan dalam array bertipe struct Kelinci yang memiliki dua field: nama dan berat. Setelah pengguna memasukkan jumlah kelinci dan mengisi data masing-masing kelinci, program mencari kelinci dengan berat paling ringan dan paling berat dengan membandingkan nilai berat dari setiap elemen array. Hasil akhir menampilkan nama dan berat kelinci paling ringan dan paling berat.
 
 ### Soal-2
@@ -113,7 +112,7 @@ func main() {
 
 ```
 ![](s(2).png)
-
+![](Output/s(2).png.png)
 >Program ini digunakan untuk menghitung total dan rata-rata berat ikan dalam beberapa wadah. Pengguna diminta memasukkan jumlah total ikan dan jumlah ikan per wadah. Berat masing-masing ikan kemudian diinput satu per satu dan disimpan dalam slice. Program menghitung jumlah wadah yang dibutuhkan, lalu menjumlahkan berat ikan untuk setiap wadah sesuai urutan. Setelah itu, program menghitung rata-rata total berat ikan terhadap jumlah wadah. Hasil akhirnya adalah daftar total berat per wadah dan rata-rata berat ikan per wadah.
 
 ### Soal-3
@@ -174,6 +173,5 @@ func main() {
 	fmt.Printf("Rata-rata berat balita: %.2f kg\n", rata)
 }
 ```
-![](s(3).png)
-
+![](Output/s(3).png.png)
 >Program ini mencatat data berat beberapa balita, lalu menghitung berat minimum, maksimum, dan rata-ratanya. Berat balita disimpan dalam array bertipe khusus arrBalita yang berisi maksimal 100 elemen bertipe float64. Fungsi hitungMinMax digunakan untuk mencari berat balita paling ringan dan paling berat, sedangkan fungsi hitungRata menghitung rata-rata dari seluruh data berat. Di fungsi main, pengguna diminta memasukkan jumlah data dan berat tiap balita, kemudian hasil perhitungan ditampilkan ke layar.
